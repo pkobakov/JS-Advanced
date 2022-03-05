@@ -1,5 +1,5 @@
 function evenPositionNums(input) {
-    let result = ' ';
+    let result = [];
 
     for (let index = 0; index < input.length; index++) {
         
