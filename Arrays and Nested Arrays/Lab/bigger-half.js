@@ -1,4 +1,4 @@
-function bigger_half (input = []) {
+function bigger_half (input) {
 
    let k = Math.ceil(input.length/2);
    let sorted = input.sort((a,b)=>a-b).slice(-k);
