@@ -1,5 +1,6 @@
 function lastKNumbersSequence(n, k) {
     const sequence = [1];
+    
     for(let i = 1; i < n; i++) {
         let tempArray = sequence.slice(-k);
         let sum = 0;
