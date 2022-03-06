@@ -1,23 +1,10 @@
-function piece_of_pie(input = []) {
-    let array = input[0];
-    let start = input[1];
-    let end = input[2];
+function piece_of_pie(array = [], startIndex, endIndex) {
 
+    let start =  array.indexOf(startIndex);
+    let end = array.indexOf(endIndex);
 
-    for (let index = 0; index < array.length; index++) {
-        
-        if (start == array[index]) {
-            start = index;
-        }
-
-        else if (end == array[index]) {
-            end = index;
-        }
-        
-    }
-
-    let result = array.slice(start,end+1);
-    console.log(result);
+    return array.slice(start,end+1);
+    
    
 }
 
