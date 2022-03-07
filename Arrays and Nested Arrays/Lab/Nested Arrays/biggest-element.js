@@ -9,7 +9,7 @@ function biggest_element(matrix) {
     
    }
 
-    console.log(biggest);
+    return biggest;
 }
 
 biggest_element([[20, 50, 10],
