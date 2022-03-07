@@ -3,7 +3,7 @@ function process_odd_positions(arrNum = []) {
     let odd = (arrNum.filter((num, i)=>i % 2 == 1));
     let double = odd.map(x=>x * 2);
     let reverse = (double.reverse()).join(" ");
-    console.log(reverse);
+    return reverse;
 
 }
 
