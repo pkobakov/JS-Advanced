@@ -33,9 +33,26 @@ function addMovie(){
     ulElement.appendChild(newLiElement);
     ulElement.appendChild(copyElement);
     ulElement.prepend(prependElement);
+}
+
+function addItem(){
+    let inputElement = document.getElementById('newItemText');
+    let ulElement = document.getElementById('items');
+    let newLiElement = document.createElement('li');
+
+    newLiElement.textContent = inputElement.value;
+    ulElement.appendChild(newLiElement);
+}
+
+function addNewMovie(){
+    let movieInputElement = document.querySelector('input[name="title"]');
+    let movieListElement = document.getElementById('movies-list');
 
 
-
+    let liElement = document.createElement('li');
+    liElement.textContent = movieInputElement.value;
+    
+    movieListElement.appendChild(liElement);
 }
 
 

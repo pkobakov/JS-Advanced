@@ -7,14 +7,19 @@
 </head>
 <style>
   body {
-    padding: 20px 30px;
+    padding: 10px 20px;
     font-family: Helvetica, sans-serif;
     font-weight: 200;;
   }
 
-  hr {
-    margin: 40px 20px;
-  }
+ section {
+   padding: 40px;
+   border-bottom: 1px solid black;
+ }
+
+ h2 {
+   text-decoration: underline;
+ }
 
   li {
     line-height: 1.5;
@@ -22,7 +27,9 @@
 </style>
 
 <body>
-    <h1>My DOM demo</h1>
+  <h1>My DOM demo</h1>
+  <section>
+    <h2>DOM manipulation basics</h2>
     <ul>
       <li>Name</li>
       <li>Family</li>
@@ -31,33 +38,58 @@
     <p class="name">The name is: </p>
 
     <button onclick="typeName()">Type Name</button>
+  </section>
 
-    <hr>
-
-    <h2>Sum Numbers</h2>
+  <section>
+    <h3>Sum Numbers</h3>
     <input type="text" id="first-number"/> +
     <input type="text" id="second-number"/> =
     <input type="text" id="sum" readonly="readonly"/>
     <input type="button" value="Calc" onclick="calculate()">
     <script src="/data.js"></script>
+  </section>
 
-    <hr>
-
-    <h3>Welcome to Read more task.<a href="#" id="more" onclick="showText()"> Read more...</a>
+  <section>
+    <h3>Welcome to Read more task.</h3>
+    <a href="#" id="more" onclick="showText()"> Read more...</a>
     <span id="text" style="display: none;">Welcome to DOM and JavaScript</span>
     <script src="functions.js"></script>
-    </h3>
-
-    <hr>
-
-    <h2>Movie list.</h2>
-    <p>Element create, append, prepend</p>
-
+      
+  </section>
+  <h2>Element create, append, prepend</h2>
+  <section>
+    <h3>Movie list.</h3>
     <ul id="movie-list">
       <li>The Matrix</li>
     </ul>
     <button onclick="addMovie()">Add Movies</button>
     <script src="functions.js"></script>
+  </section>
+
+  <section>
+    <h3>List of Items</h3>
+    <div>
+      <ul id="items">
+        <li>First</li>
+        <li>Second</li>
+      </ul>
+      <input type="text" id="newItemText">
+      <input type="button" value="Add" onclick="addItem()">
+    </div>
+  </section>
+  
+  <h2>DOM Events</h2>
+  <section>
+    <h3>Movie list</h3>
+    <ul id="movies-list">
+      <li>The Matrix</li>
+    </ul>
+
+    <input type="text" name="title">
+    <button onclick="addNewMovie()">Add</button>
+    <script src="functions.js"></script>
+  </section>
+
 
   
     <script>
