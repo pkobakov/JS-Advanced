@@ -17,3 +17,19 @@ function showText(){
     let moreElement = document.getElementById('text');
     moreElement.style.display = 'inline';
 }
+
+function addMovie(){
+    let ulElement = document.getElementById('movie-list');
+    let newLiElement = document.createElement('li');
+    
+    newLiElement.textContent = 'The Godfather';
+
+    let copyElement = newLiElement.cloneNode(true);
+    copyElement.textContent = 'Spiderman';
+
+    ulElement.appendChild(newLiElement);
+    ulElement.appendChild(copyElement);
+}
+
+
+

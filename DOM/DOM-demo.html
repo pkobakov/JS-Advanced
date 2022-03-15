@@ -15,7 +15,12 @@
   hr {
     margin: 40px 20px;
   }
+
+  li {
+    line-height: 1.5;
+  }
 </style>
+
 <body>
     <h1>My DOM demo</h1>
     <ul>
@@ -29,7 +34,7 @@
 
     <hr>
 
-    <h3>Sum Numbers</h3>
+    <h2>Sum Numbers</h2>
     <input type="text" id="first-number"/> +
     <input type="text" id="second-number"/> =
     <input type="text" id="sum" readonly="readonly"/>
@@ -40,8 +45,19 @@
 
     <h3>Welcome to Read more task.<a href="#" id="more" onclick="showText()"> Read more...</a>
     <span id="text" style="display: none;">Welcome to DOM and JavaScript</span>
-    <script src="/data.js"></script>
+    <script src="functions.js"></script>
     </h3>
+
+    <hr>
+
+    <h2>Movie list.</h2>
+    <p>Element create, append, prepend</p>
+
+    <ul id="movie-list">
+      <li>The Matrix</li>
+    </ul>
+    <button onclick="addMovie()">Add Movies</button>
+    <script src="functions.js"></script>
 
   
     <script>
