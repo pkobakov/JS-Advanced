@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM demo</title>
+</head>
+<style>
+  body {
+    padding: 20px 30px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 200;;
+  }
+
+  hr {
+    margin: 40px 20px;
+  }
+</style>
+<body>
+    <h1>My DOM demo</h1>
+    <ul>
+      <li>Name</li>
+      <li>Family</li>
+      <li>Age</li>
+    </ul>
+    <p class="name">The name is: </p>
+
+    <button onclick="typeName()">Type Name</button>
+
+    <hr>
+
+    <h3>Sum Numbers</h3>
+    <input type="text" id="first-number"/> +
+    <input type="text" id="second-number"/> =
+    <input type="text" id="sum" readonly="readonly"/>
+    <input type="button" value="Calc" onclick="calculate()">
+    <script src="/data.js"></script>
+
+    <hr>
+
+    <h3>Welcome to Read more task.<a href="#" id="more" onclick="showText()"> Read more...</a>
+    <span id="text" style="display: none;">Welcome to DOM and JavaScript</span>
+    <script src="/data.js"></script>
+    </h3>
+
+  
+    <script>
+      function typeName(){
+        let getName = document.getElementsByClassName('name');
+        getName[0].innerHTML = 'The name is: Pesho';
+      }
+    </script>
+</body>
+</html>
