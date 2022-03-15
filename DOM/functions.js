@@ -27,8 +27,15 @@ function addMovie(){
     let copyElement = newLiElement.cloneNode(true);
     copyElement.textContent = 'Spiderman';
 
+    let prependElement = newLiElement.cloneNode(true);
+    prependElement.textContent = 'Terminator';
+
     ulElement.appendChild(newLiElement);
     ulElement.appendChild(copyElement);
+    ulElement.prepend(prependElement);
+
+
+
 }
 
 
