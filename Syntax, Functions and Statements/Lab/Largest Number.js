@@ -14,7 +14,7 @@ function LargestNumber(a,b,c)
         largestNumber = c;
     }
 
-    console.log(`The largest number is: ${largestNumber}`);
+    console.log(`The largest number is ${largestNumber}.`);
 }
 
 LargestNumber(1,2,3);
