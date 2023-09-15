@@ -1,4 +1,4 @@
-function greatCommonDivisor(x, y){
+function greatestCommonDivisor(x, y){
      if((typeof x !== 'number')||(typeof x !== 'number')){
         return false;
      }
@@ -15,4 +15,4 @@ function greatCommonDivisor(x, y){
      return x;
 }
 
-console.log(greatCommonDivisor(2154, 458));
+console.log(greatestCommonDivisor(2154, 458));
