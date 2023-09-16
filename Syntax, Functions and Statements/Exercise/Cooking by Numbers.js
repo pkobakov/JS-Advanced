@@ -1,11 +1,11 @@
-function cookingByNumbers(startPoint, firstMove, secondMove, thirdMove, fourthMove, fifthMove){
+function cookingByNumbers(startPoint, ...params){
      let number = Number(startPoint);
-     let chop = 'chop';
-     let dice = 'dice';
-     let spice = 'spice';
-     let bake = 'bake';
-     let fillet = 'fillet';
-     let commands = [firstMove, secondMove, thirdMove, fourthMove, fifthMove];
+     const chop = 'chop';
+     const dice = 'dice';
+     const spice = 'spice';
+     const bake = 'bake';
+     const fillet = 'fillet';
+     const commands = params;
 
      for (let i = 0; i < commands.length; i++) {
         let currentCommand = commands[i];
@@ -20,8 +20,6 @@ function cookingByNumbers(startPoint, firstMove, secondMove, thirdMove, fourthMo
         
         console.log(number);
      }
-
-
 }
 
 cookingByNumbers('32', 'chop', 'chop', 'chop', 'chop', 'chop');
