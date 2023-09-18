@@ -9,6 +9,7 @@ function validityChecker(...arr) {
         let distY = y1 - y2;
         return Math.sqrt(Math.pow(distH,2) + Math.pow(distY,2));
     }
+    
  
     if (Number.isInteger(distance(x1, y1, 0, 0))) {
         console.log(`{${x1}, ${y1}} to {0, 0} is valid`);
