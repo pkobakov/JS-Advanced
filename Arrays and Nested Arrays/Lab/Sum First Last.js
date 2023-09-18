@@ -10,5 +10,5 @@ function sumFirstLast(arr){
    return sum;
 }
 
-sumFirstLast(['20', '30', '40']);
-sumFirstLast(['5', '10']);
+console.log(sumFirstLast(['20', '30', '40']));
+console.log(sumFirstLast(['5', '10']));
