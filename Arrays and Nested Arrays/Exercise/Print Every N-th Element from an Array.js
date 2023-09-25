@@ -6,7 +6,7 @@ function solve(arr, n){
         result.push(arr[index]);
     }
 
-    console.log(result.join());
+    return result;
 }
 
 solve(['5', 
