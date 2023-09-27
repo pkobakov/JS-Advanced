@@ -31,7 +31,7 @@ function asd(car){
     }
     res.wheels = [wheels, wheels, wheels, wheels];
 
-    console.log(res.carriage);
+    return res;
 }
 
 asd({ model: 'VW Golf II',
