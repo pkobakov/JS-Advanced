@@ -5,11 +5,11 @@ function asd(worker){
         worker.dizziness = false;
     }
 
-    console.log(worker);
+    return worker;
 }
 
-asd({ weight: 80,
-      experience: 1,
-      levelOfHydrated: 0,
-      dizziness: true }
-  )
+console.log(asd({ weight: 80,
+                  experience: 1,
+                  levelOfHydrated: 0,
+                  dizziness: true }
+                ));
