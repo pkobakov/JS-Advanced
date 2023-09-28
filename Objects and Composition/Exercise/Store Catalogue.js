@@ -5,8 +5,8 @@ function solve(data){
     let letter;
 
     for (let el of data) {
-        if(el[0][0] !== letter){
-            letter = el[0][0];
+        if(el[0] !== letter){
+            letter = el[0];
             console.log(letter);
         }
 
