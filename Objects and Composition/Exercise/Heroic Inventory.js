@@ -2,9 +2,9 @@ function foo(input){
    let res = [];
 
    for (const iterator of input) {
-    let[name, level, items] = iterator.split('/');
+    let[name, level, items] = iterator.split(' / ');
     level = Number(level);
-    items = items? items.split(',')  : [];
+    items = items? items.split(', ')  : [];
     res.push({name, level, items});
    }
 
