@@ -11,7 +11,9 @@ function foo(data){
             if(currentPrice > price){
                 res[product] = {town, price}
             }
+
         } else{
+
             res[product] = {town, price};
         } 
         
@@ -21,8 +23,6 @@ function foo(data){
     for (const [product, value] of Object.entries(res)) {
         console.log(`${product} -> ${value.price} (${value.town})`)
     }
-    
-
 }
 
 foo(['Sample Town | Sample Product | 1000',
