@@ -21,7 +21,7 @@ if(convention === 'Camel Case'){
   });
 
 } else {
-    res = 'Error';
+    res = 'Error!';
   }
   
   document.getElementById('result').textContent = res;
