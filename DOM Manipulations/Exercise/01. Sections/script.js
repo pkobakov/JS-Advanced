@@ -16,6 +16,6 @@ function create(words) {
 
    function hiddenParagraph(){
       let currentP = this.children[0];
-      currentP.style.display = 'inline';
+      currentP.style.display = 'block';
    }
 }
