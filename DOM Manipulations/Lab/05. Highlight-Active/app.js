@@ -9,7 +9,4 @@ function focused() {
             event.target.parentElement.classList.remove('focused')
         });
     }
-
-
-
 }
