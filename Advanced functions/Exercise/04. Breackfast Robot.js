@@ -1,4 +1,3 @@
-
 function breackfastRobot(){
     
     const recipes = {
@@ -63,7 +62,7 @@ function breackfastRobot(){
             let requiredQty = value * quantity;
 
             if (store[micEl] < requiredQty) {
-                return `Error: not enough <${micEl}> in stock `;                   
+                return `Error: not enough ${micEl} in stock`;                   
             } 
             
             prepareRecipe[micEl] = requiredQty;
