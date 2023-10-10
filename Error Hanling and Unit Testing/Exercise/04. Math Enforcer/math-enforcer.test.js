@@ -100,6 +100,8 @@ describe('sum', () => {
 
         it('tets with positive value', () => {
            assert.equal(mathEnforcer.sum(4,5),9);
+           assert.equal(mathEnforcer.sum(4.5, 5.5), 10);
+           
         });
     });
 });
