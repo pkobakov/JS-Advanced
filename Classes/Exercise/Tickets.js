@@ -1,12 +1,13 @@
-class Ticket {
-    constructor(destination, price,status){
-        this.destination = destination;
-        this.price = price; 
-        this.status = status; 
-    }
-}
 
-function sort(arr, criteria){
+function solve(arr, criteria){
+
+    class Ticket {
+        constructor(destination, price,status){
+            this.destination = destination;
+            this.price = Number(price); 
+            this.status = status; 
+        }
+    }
 
     let res = [];
 
@@ -17,11 +18,14 @@ function sort(arr, criteria){
         res.push(ticket);
         
     }
+
+    let sorted = criteria === 'price'? res.sort((a,b) => a[criteria] - b[criteria]) 
+                                     : res.sort((a, b) => a[criteria].localeCompare(b[criteria]));
     
-    return res.sort((a, b) => a[criteria].localeCompare(b[criteria])).toString();
+    return sorted;
 }
 
-console.table(sort(['Philadelphia|94.20|available',
+console.table(solve(['Philadelphia|94.20|available',
 'New York City|95.99|available',
 'New York City|95.99|sold',
 'Boston|126.20|departed'],
@@ -30,7 +34,7 @@ console.table(sort(['Philadelphia|94.20|available',
 
 console.log('...............');
 
-console.table(sort(['Philadelphia|94.20|available',
+console.table(solve(['Philadelphia|94.20|available',
 'New York City|95.99|available',
 'New York City|95.99|sold',
 'Boston|126.20|departed'],
