@@ -1,4 +1,3 @@
-
 function solve(arr, criteria){
 
     class Ticket {
