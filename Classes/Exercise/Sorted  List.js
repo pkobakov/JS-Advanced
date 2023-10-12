@@ -17,7 +17,7 @@ class List {
       }
       
       this.list.splice(index,1);
-      this.size = list.length;
+      this.size = this.list.length;
       this.list.sort((a,b) => a - b);
       return this.list;
       
@@ -28,7 +28,7 @@ class List {
             throw new Error('Index is out of range');
         }
           
-        this.size = list.length;
+        this.size = this.list.length;
         this.list.sort((a,b) => a - b);
         return this.list[index];
     }
