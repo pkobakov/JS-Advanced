@@ -12,7 +12,7 @@ function solution(){
            super(color, gasWeight);
            this.ribbonColor = ribbonColor;
            this.ribbonLength = ribbonLength;
-           this._ribbon = {ribbonColor, ribbonLength}
+           this._ribbon = {color: ribbonColor, length: ribbonLength}
 
         }
 
