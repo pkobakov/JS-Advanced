@@ -1,0 +1,31 @@
+You need to create several classes for Posts.
+Implement the following classes:
+•	Post, which is initialized with the title (String) and content (String)
+o	The 2 arguments should be public members
+o	The Post class should also have toString() function which returns the following result:
+"Post: {postTitle}"
+"Content: {postContent}"
+
+SocialMediaPost, which inherits the Post class and should be initialized with 2 additional arguments - likes (Number) and dislikes (Number). The class should hold:
+o	comments(Strings) -  an array of strings
+o	addComment(comment)- a function, which adds comments to that array
+o	The class should extend the toString() function of the Post class, and should return the following result:
+"Post: {postTitle}"
+"Content: {postContent}"
+"Rating: {postLikes - postDislikes}"
+"Comments:"
+" * {comment1}"
+" * {comment2}"
+. . .
+In case there are no comments, return information only about the title, content, and rating of the post.
+
+BlogPost, which inherits the Post class:
+o	The BlogPost class should be initialized with 1 additional argument - views(Number).
+o	The BlogPost class should hold 
+- view() - which increments the views of the object with 1, every time it is called. 
+The function should return the object so that chaining is supported.
+
+o	The BlogPost class should extend the toString() function of the Post class, and should return the following result:
+"Post: {postTitle}"
+"Content: {postContent}"
+"Views: {postViews}"
