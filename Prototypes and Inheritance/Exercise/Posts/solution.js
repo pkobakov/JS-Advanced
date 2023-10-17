@@ -41,6 +41,7 @@ function solution(){
 
         view() {
             this.views ++; 
+            return this;
         }
 
         toString(){
