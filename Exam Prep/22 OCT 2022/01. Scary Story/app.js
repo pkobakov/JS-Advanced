@@ -1,5 +1,4 @@
 window.addEventListener("load", solve);
-
 function solve() {
   const firstNameInput = document.getElementById('first-name');
   const lastNameInput= document.getElementById('last-name');
@@ -22,11 +21,11 @@ function solve() {
     let lastName = lastNameInput.value;
     let age = ageInput.value;
     let storyTitle = storyTitleInput.value;
-    //let genre = genreInput.value;
-    let genre = genreInput.options[genreInput.selectedIndex].value;
+    let genre = genreInput.value;
+    //let genre = genreInput.options[genreInput.selectedIndex].value;
     let story = storyDescriptionInput.value;
 
-    if (!firstName || !lastName || !age || !storyTitle ) {
+    if (!firstName || !lastName || !age || !storyTitle || !story) {
       return;
     }
     
@@ -152,3 +151,5 @@ function solve() {
   }
 
 }
+
+
