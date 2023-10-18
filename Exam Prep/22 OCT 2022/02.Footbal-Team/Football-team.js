@@ -79,7 +79,7 @@ class footballTeam {
         }
 
         if (selectedPlayer.age >= age) {
-            return `${selectedPlayer.name} is above the limit!`;
+            return `${selectedPlayer.name} is above age limit!`;
         }
  
         let ageDifference = age - selectedPlayer.age;
