@@ -13,6 +13,7 @@ const chooseYourCar = {
             }
             throw new Error(`This type of car is not what you are looking for.`);
         }
+        
     },
 
     brandName(brands, brandIndex) {
