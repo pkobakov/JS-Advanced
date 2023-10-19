@@ -21,7 +21,7 @@ class OnlineShop{
         const selectedProduct = this.selectProduct(product);
 
         if (!selectedProduct) {
-            throw new Error (`There is no ${product} in the warehouse`);
+            throw new Error (`There is no ${product} in the warehouse.`);
         }
 
         if (minimalQuantity <= 0 ) {
