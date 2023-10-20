@@ -2,7 +2,7 @@ class WineSelection {
     constructor(space){
         this.space = Number(space);
         this.wines =[];
-        this.isPaid = false;
+        this.paid = false;
         this.bill = 0; 
     }
 
@@ -11,9 +11,9 @@ class WineSelection {
             throw new Error('Not enough space in the cellar.')
         }
         
-        let isPaid = this.isPaid;
+        let paid = this.paid;
         this.space --; 
-        this.wines.push({wineName, wineType, price, isPaid});
+        this.wines.push({wineName, wineType, price, paid});
         return `You reserved a bottle of ${wineName} ${wineType} wine.`
     }
 
@@ -24,11 +24,11 @@ class WineSelection {
             throw new Error(`${wineName} is not in the cellar.`);
         }
 
-        else if(selectedWine.isPaid){
+        else if(selectedWine.paid){
             throw new Error(`${wineName} has already been paid.`);
         }
 
-        selectedWine.isPaid = true;
+        selectedWine.paid = true;
         this.bill += price;
         return `You bought a ${wineName} for a ${price}$.`;
     }
@@ -53,7 +53,7 @@ class WineSelection {
 
             return `You have space for ${ this.space } bottles more.` + '\n' +
             `You paid ${this.bill}$ for the wine.` + '\n' +
-            this.wines.sort((a, b) => a.wineName.localeCompare(b.wineName)).map(w => `${w.wineName} > ${w.wineType} - ${w.isPaid === true ? 'Has Paid.': 'Not Paid.'}`)
+            this.wines.sort((a, b) => a.wineName.localeCompare(b.wineName)).map(w => `${w.wineName} > ${w.wineType} - ${w.paid === true ? 'Has Paid.': 'Not Paid.'}`)
                       .join('\n');
         } else{
             let selectedWine = this.wines.find(w => w.wineType === wineType);
@@ -62,7 +62,7 @@ class WineSelection {
             }
 
 
-           return `${selectedWine.wineName} > ${wineType} - ${selectedWine.isPaid === true ? 'Has Paid.' : 'Not Paid.'}`
+           return `${selectedWine.wineName} > ${wineType} - ${selectedWine.paid === true ? 'Has Paid.' : 'Not Paid.'}`
         }
     }
 
@@ -101,12 +101,12 @@ class WineSelection {
 // console.log(selection.openBottle('Cabernet Sauvignon Napa Valley'));
 
 //Input 4
-const selection = new WineSelection(5)
-selection.reserveABottle('Bodegas Godelia Mencía', 'Rose', 144);
-selection.payWineBottle('Bodegas Godelia Mencía', 144);
-selection.reserveABottle('Sauvignon Blanc Marlborough', 'White', 50);
-selection.reserveABottle('Cabernet Sauvignon Napa Valley', 'Red', 120);
-console.log(selection.cellarRevision());
+// const selection = new WineSelection(5)
+// selection.reserveABottle('Bodegas Godelia Mencía', 'Rose', 144);
+// selection.payWineBottle('Bodegas Godelia Mencía', 144);
+// selection.reserveABottle('Sauvignon Blanc Marlborough', 'White', 50);
+// selection.reserveABottle('Cabernet Sauvignon Napa Valley', 'Red', 120);
+// console.log(selection.cellarRevision());
 
 
 // console.log(selection.reserveABottle('Sauvignon Blanc Marlborough', 'White', 50));
