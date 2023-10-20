@@ -38,7 +38,7 @@ function solve() {
     fromDateParagraph.textContent = `From date: ${fromDate}`;
 
     let forDaysParagraph = document.createElement('p');
-    forDaysParagraph.textContent = `For ${forDays}`;
+    forDaysParagraph.textContent = `For ${forDays} days`;
 
     let forPeopleParagraph = document.createElement('p');
     forPeopleParagraph.textContent = `For ${numberOfPeople} people`;
