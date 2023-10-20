@@ -35,11 +35,11 @@ class WineSelection {
 
     openBottle(wineName){
         let selectedWine = this.findBottle(wineName);
-        if (!wineName) {
+        if (!selectedWine) {
             throw new Error('The wine, you\'re looking for, is not found.');
         }
 
-        else if (!selectedWine.isPaid) {
+        else if (!selectedWine.paid) {
             throw new Error(`${wineName} need to be paid before open the bottle.`)
         }
 
